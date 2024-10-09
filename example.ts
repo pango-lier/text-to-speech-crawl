@@ -1,5 +1,6 @@
 import path from "path";
 import textToSpeech from "text-to-speech-crawl";
+import { DeviceClass } from "text-to-speech-crawl/type/type";
 
 export const exampleTextToSpeech = async () => {
   try {
@@ -17,7 +18,7 @@ export const exampleTextToSpeech = async () => {
           audioEncoding: "LINEAR16",
           pitch: 0,
           speakingRate: 0,
-          effectsProfileId: ["small-bluetooth-speaker-class-device"],
+          effectsProfileId: [DeviceClass.SMALL_BLUETOOTH_SPEAKER_CLASS_DEVICE],
         },
       },
       path.join(__dirname, `example${new Date().getTime()}.mp3`)

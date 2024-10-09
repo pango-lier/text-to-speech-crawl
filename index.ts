@@ -2,7 +2,7 @@ import axios from "axios";
 import { TOKEN, URL_CLOUD } from "./type/const";
 import { InputData } from "./type/type";
 import { writeFile } from "fs/promises";
-import exampleTextToSpeech from "./example";
+import { exampleTextToSpeech } from "./example";
 
 const textToSpeech = async (
   data: InputData,

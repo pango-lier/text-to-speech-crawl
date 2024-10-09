@@ -12,14 +12,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.exampleTextToSpeech = void 0;
 const path_1 = __importDefault(require("path"));
-const _1 = __importDefault(require("."));
-const b = () => __awaiter(void 0, void 0, void 0, function* () {
+const text_to_speech_crawl_1 = __importDefault(require("text-to-speech-crawl"));
+const exampleTextToSpeech = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log("----------Start convert to mp3");
-        const response = yield (0, _1.default)({
+        const response = yield (0, text_to_speech_crawl_1.default)({
             input: {
-                text: "IThey're like time machines taking you to different worlds and landscapes, and um, and I just can't get enough of it.",
+                text: "They're like time machines taking you to different worlds and landscapes, and um, and I just can't get enough of it.",
             },
             voice: {
                 languageCode: "en-US",
@@ -31,11 +32,11 @@ const b = () => __awaiter(void 0, void 0, void 0, function* () {
                 speakingRate: 0,
                 effectsProfileId: ["small-bluetooth-speaker-class-device"],
             },
-        }, path_1.default.join(__dirname, "example.mp3"));
-        console.log("----------Completed");
+        }, path_1.default.join(__dirname, `example${new Date().getTime()}.mp3`));
     }
     catch (error) {
         console.log(error);
     }
 });
-b();
+exports.exampleTextToSpeech = exampleTextToSpeech;
+(0, exports.exampleTextToSpeech)();
