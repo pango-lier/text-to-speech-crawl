@@ -1,0 +1,31 @@
+{
+  "name": "text-to-speech-crawl",
+  "version": "1.0.0",
+  "description": "text to speed crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pango-lier/text-to-speech-crawl.git"
+  },
+  "keywords": [
+    "text",
+    "texttoaudio",
+    "texttospeech",
+    "text-to-speech",
+    "crawler-text-to-speech",
+    "free-text-to-speech",
+    "speech",
+    "mp3",
+    "crawler",
+    "audio"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pango-lier/text-to-speech-crawl/issues"
+  },
+  "homepage": "https://github.com/pango-lier/text-to-speech-crawl#readme"
+}
