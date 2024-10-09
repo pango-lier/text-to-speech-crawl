@@ -1,13 +1,13 @@
 import path from "path";
-import textToSpeech from ".";
+import textToSpeech from "text-to-speech-crawl";
 
-const b = async () => {
+export const exampleTextToSpeech = async () => {
   try {
     console.log("----------Start convert to mp3");
     const response = await textToSpeech(
       {
         input: {
-          text: "IThey're like time machines taking you to different worlds and landscapes, and um, and I just can't get enough of it.",
+          text: "They're like time machines taking you to different worlds and landscapes, and um, and I just can't get enough of it.",
         },
         voice: {
           languageCode: "en-US",
@@ -20,12 +20,11 @@ const b = async () => {
           effectsProfileId: ["small-bluetooth-speaker-class-device"],
         },
       },
-      path.join(__dirname, "example.mp3")
+      path.join(__dirname, `example${new Date().getTime()}.mp3`)
     );
-    console.log("----------Completed");
   } catch (error) {
     console.log(error);
   }
 };
 
-b();
+exampleTextToSpeech();
