@@ -4,6 +4,8 @@
   "description": "text to speed crawler",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +29,13 @@
   "bugs": {
     "url": "https://github.com/pango-lier/text-to-speech-crawl/issues"
   },
-  "homepage": "https://github.com/pango-lier/text-to-speech-crawl#readme"
+  "homepage": "https://github.com/pango-lier/text-to-speech-crawl#readme",
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
 }
