@@ -21,7 +21,7 @@ const exampleTextToSpeech = () => __awaiter(void 0, void 0, void 0, function* ()
         console.log("----------Start convert to mp3");
         const response = yield (0, text_to_speech_crawl_1.default)({
             input: {
-                text: "They're like time machines taking you to different worlds and landscapes, and um, and I just can't get enough of it.",
+                text: "Movies, oh my gosh, I just just absolutely love them. They're like time machines taking you to different worlds and landscapes, and um, and I just can't get enough of it.",
             },
             voice: {
                 languageCode: "en-US",
