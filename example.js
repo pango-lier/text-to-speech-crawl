@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.exampleTextToSpeech = void 0;
 const path_1 = __importDefault(require("path"));
 const text_to_speech_crawl_1 = __importDefault(require("text-to-speech-crawl"));
+const type_1 = require("text-to-speech-crawl/type/type");
 const exampleTextToSpeech = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log("----------Start convert to mp3");
@@ -30,7 +31,7 @@ const exampleTextToSpeech = () => __awaiter(void 0, void 0, void 0, function* ()
                 audioEncoding: "LINEAR16",
                 pitch: 0,
                 speakingRate: 0,
-                effectsProfileId: ["small-bluetooth-speaker-class-device"],
+                effectsProfileId: [type_1.DeviceClass.SMALL_BLUETOOTH_SPEAKER_CLASS_DEVICE],
             },
         }, path_1.default.join(__dirname, `example${new Date().getTime()}.mp3`));
     }
