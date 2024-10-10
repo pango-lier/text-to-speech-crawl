@@ -23,8 +23,8 @@ export const exampleTextToSpeech = async () => {
       },
       path.join(__dirname, `example${new Date().getTime()}.mp3`)
     );
-  } catch (error) {
-    console.log(error);
+  } catch (error: any) {
+    console.log(error?.message);
   }
 };
 
