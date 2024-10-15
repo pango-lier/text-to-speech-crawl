@@ -1,6 +1,6 @@
 {
   "name": "text-to-speech-crawl",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "text to speed crawler",
   "main": "index.js",
   "scripts": {
